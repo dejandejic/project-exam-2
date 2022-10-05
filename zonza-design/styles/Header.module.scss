@@ -1,0 +1,130 @@
+.header {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 999;
+.logo img {
+    max-width: 170px;
+  }
+  .innerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      ul{ 
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        li {
+            a {
+                padding: 0 30px;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                color: #959292;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.02em;
+                position: relative;
+                @media screen and (max-width: 1199px) {
+                  padding: 0 20px;
+                }
+                 
+              :hover{ color: #EDE5D8;}
+              
+        }
+      }
+  }
+}
+}
+ 
+ /*===========HAMBURGER MENU=========*/  
+ 
+
+ button.menuburgure {
+  background-color: transparent;
+  border: none;
+  display: none;
+  & span.line {
+    width: 44px;
+    height: 3px;
+    background-color: #000000;
+    display: block;
+    margin: 8px;
+  }
+  @media screen and (max-width: 992px) { 
+display: block;          
+
+  }
+}
+@media screen and (max-width: 992px) { 
+  .header {
+  & nav {
+    padding-top: 20px;
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    background-color: white;
+    top: 89px;
+    padding-left: 20px;
+    right: 0;
+    transition: 0.5s all ease;
+    display: none;
+    & ul {
+      flex-wrap: wrap;
+      padding-left: 0;
+      & li {
+        width: 100%;
+        padding: 20px 0px;
+    }
+  }
+  }     
+  
+}
+}
+
+
+
+ 
+.openMenu {
+  display: block !important;
+}
+.menuburgure.openMenu{
+  & span:nth-child(2) {
+      display: none!important;
+    }
+    &  span:first-child {
+      transform: rotate(45deg);
+    }
+    & span:last-child {
+      transform: rotate(319deg);
+      position: absolute;
+      top: 25px;
+    }
+  }
+
+ 
+
+  .innerHeader ul li a::after{content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.5s;
+  
+  
+  }
+  .innerHeader ul li a:hover::after{
+    width: 60%;
+  }
+  .innerHeader ul li a:hover{color: #000000;}
+
+  .innerHeader ul li a.active{color: #000000 !important;}
+  .innerHeader ul li a.active::after{
+    width: 60%;
+  }
