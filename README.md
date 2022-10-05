@@ -16,12 +16,12 @@ A website for a real world client. I made a page for Zonzadesign which is a desi
 
 <h3>Getting Started:</h3>
 
-1. Clone the repo: https://github.com/dejandejic/dejan-dejic-semester-project-2
+1. Clone the repo: https://github.com/dejandejic/project-exam-2
 2. npm install
 3. npm run develop
-4. User credentials:
-- Username/email: <i>admin@admin.com </i>
-- Admin password: <i> Pass1234 </i>
+
+<h4>Live Website:</h4>
+http://54.163.223.71:3000/
 
 <h3>Contact</h3>
 
