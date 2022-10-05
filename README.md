@@ -8,10 +8,10 @@ A website for a real world client. I made a page for Zonzadesign which is a desi
 
 <h3>Built With:</h3>
 
-- Strapi API
-- SCSS
-- HTML
 - JavaScript
+- TypeScript
+- SCSS
+- MYSQL
 - CSS
 
 <h3>Getting Started:</h3>
